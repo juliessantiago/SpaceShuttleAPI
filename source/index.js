@@ -16,5 +16,5 @@ App.get('/', (req, res) => {
     res.send('Ok')
 })
 App.listen(2000, () => {
-    console.log('Servidor on')
+    console.log('Server on')
 })

@@ -16,7 +16,7 @@ route.post('/store', async(req, res) => {
 /*========Rota de listagem de todos os Navers==============*/ 
 route.get('/index', async(req, res) => {
     try{
-        const navers = await modelNaver.find(req.body)
+        const navers = await modelNaver.find()
         res.send({navers})
     }catch(error){
         res.send('Oops! '+error)
@@ -24,12 +24,17 @@ route.get('/index', async(req, res) => {
 })
 /*=========Rota de exibição de único Naver, passando ID=============*/ 
 route.get('/show:id', async(req, res) => {
-    console.log(req.params)
+   
     try{
-        const naver = await modelNaver.findById(req.params).populate('project')
-        res.send({naver})
+        const id = req.params
+         //console.log(req.params)
+
+        const user = await modelNaver.findById(id).populate('project')
+        res.send({user})
+        
+        
     }catch(error){
-        res.send('Oops!Cannot find this Naver... '+error)
+        res.send('Oops!Cannot find this user... '+error)
     }
 })
 
