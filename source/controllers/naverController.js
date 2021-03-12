@@ -29,8 +29,8 @@ route.get('/show:id', async(req, res) => {
         const id = req.params
          //console.log(req.params)
 
-        const user = await modelNaver.findById(id).populate('project')
-        res.send({user})
+        const naver = await modelNaver.findById(id).populate('project')
+        res.send({naver})
         
         
     }catch(error){

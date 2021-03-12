@@ -21,7 +21,21 @@ route.get('/index', async(req, res) => {
         res.send('Oops! '+error)
     }
 })
-/*=========Rota de exibição de único Naver, passando ID=============*/ 
+/*=========Rota de exibição de único Project, passando ID=============*/ 
+route.get('/show:id', async(req, res) => {
+   
+    try{
+        const id = req.params
+         //console.log(req.params)
+
+        const project = await modelProject.findById(id).populate('naver')
+        res.send({project})
+        
+        
+    }catch(error){
+        res.send('Oops!Cannot find this user... '+error)
+    }
+})
 
 
 module.exports = (App) => App.use('/projects', route) 
