@@ -1,3 +1,5 @@
+//Entry point 
+
 const express = require('express'); 
 const bodyParser = require('body-parser')
 
@@ -6,6 +8,8 @@ const App = express();
 
 App.use(bodyParser.json())
 App.use(bodyParser.urlencoded({extended : false}))
+
+require('./controllers/naverController')(App)
 
 App.get('/', (req, res) => {
     res.send('Ok')
