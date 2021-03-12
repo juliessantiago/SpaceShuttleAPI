@@ -10,6 +10,7 @@ App.use(bodyParser.json())
 App.use(bodyParser.urlencoded({extended : false}))
 
 require('./controllers/naverController')(App)
+require('./controllers/projectController')(App)
 
 App.get('/', (req, res) => {
     res.send('Ok')
