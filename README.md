@@ -18,7 +18,7 @@
 
 
 <h4 align="center"> 
-	:wrench: :hammer: Statuus:  em andamento
+	:wrench: :hammer: Status:  em andamento
 </h4>
 
 <h3 id="func"> Funcionalidades </h3>
@@ -56,6 +56,26 @@ Agora, basta acessar: http://localhost:2000/
 Como sugestão, você pode utilizar a plataforma do Insomnia (Cliente de API) para testar se está tudo ok. 
 <p><a href="https://insomnia.rest/download">Download</a></p>
 
+<p>Após download e instalação, você pode começar criando a primeira requisição da API: </p>
+<h1 align="center">
+  <img width="30%" src="criando_request.PNG" />
+</h1>
+<p>Após criar a request com o nome desejado, você irá acessar o painel superior, onde deve informar a URL da requisição, de acordo com 
+a rota definida na API. Atente-se ao tipo de requisição (GET, POST, PUT...). Exemplo: localhost:2000/navers/index</p>
+<h1 align="center">
+  <img width="40%" src="criando_url.PNG" />
+</h1>
+<p>Agora que a URL foi criada, você pode enviar a requisição. No caso de inserções de dados, você poderá fazer isso no painel abaixo
+da URL, definindo o tipo de dado que será usado. No caso desta API, usaremos JSON: </p>
+<h1 align="center">
+  <img width="40%" src="inserindo_dados.PNG" />
+</h1>
+<p>Depois de clicar em SEND, você pode conferir o retorno e o status da requisição no painel à direita</p>
+<h1 align="center">
+  <img width="30%" src="resposta_requisicao.PNG" />
+</h1>
+
+
 <h3 id="tecs">Ferramentas e tecnologias</h3>
 <ol>
 <p>Obrigatório</p>
@@ -73,7 +93,7 @@ Como sugestão, você pode utilizar a plataforma do Insomnia (Cliente de API) pa
 <h3 id="autor">Autor</h3>
 <h6 color:red>Julie Santiago</h6>
 ====================================================================
-<p>➡️<h5>CodeSandbox</h5></p>
+<p><h5>➡️CodeSandbox</h5></p>
 <a href="https://codesandbox.io/s/teste-estagio-template-forked-qvdtj?file=/index.html">Exercícios de lógica</a>
 
 
