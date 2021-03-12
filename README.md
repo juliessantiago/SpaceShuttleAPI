@@ -9,7 +9,8 @@
 <p> 
 <a href="#func">Funcionalidades</a>
 <a href="#prereq">Pré-requisitos</a> ||
-<a href="#app">Rodando a aplicação</a>
+<a href="#app">Rodando a aplicação</a>||
+<a href="#test">Testando rotas</a>||
 <a href="#tecs">Tecnologias</a> ||
 <a href="#lic">Licença</a> ||
 <a href="#autor">Autor</a>
@@ -51,6 +52,10 @@ Você precisará instalar as seguintes ferramentas:
 
 Agora, basta acessar: http://localhost:2000/
 
+<h3 id="test">Testando as rotas</h3>
+Como sugestão, você pode utilizar a plataforma do Insomnia (Cliente de API) para testar se está tudo ok. 
+<p><a href="https://insomnia.rest/download">Download</a></p>
+
 <h3 id="tecs">Ferramentas e tecnologias</h3>
 <ol>
 <p>Obrigatório</p>
@@ -68,6 +73,7 @@ Agora, basta acessar: http://localhost:2000/
 <h3 id="autor">Autor</h3>
 <h6 color:red>Julie Santiago</h6>
 ====================================================================
-➡️<h5>CodeSandbox</h5>
+<p>➡️<h5>CodeSandbox</h5></p>
 <a href="https://codesandbox.io/s/teste-estagio-template-forked-qvdtj?file=/index.html">Exercícios de lógica</a>
+
 
